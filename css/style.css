@@ -1,0 +1,7 @@
+.container {
+    margin: auto;
+    /*gives equal left and right margins*/
+}
+img {
+    width: 100%;
+}
