@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="css/flexboxgrid.css">
@@ -11,17 +12,15 @@
     <!--HEADER-->
     <header id="main-header">
       <div class="container">
-        <div class="row end-sm">
+        <div class="row end-sm center-xs middle-sm">
           <div class="col-xs-12 col-sm-2">
-            <h1>Nicolas</h1>
+              <h1 id="logo"><span class="color-text ">Nik</span>nows</h1>
           </div>
           <div class="col-xs-12 col-sm-10">
             <nav id="navbar">
               <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">About</a></li>
-                <li><a href="index.html">Services</a></li>
-                <li><a href="index.html">Contact</a></li>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -30,51 +29,52 @@
     </header>
       <section id="showcase">
           <div class="container">
-              <div class="row">
+              <div class="row center-xs center-sm middle-xs middle-sm">
                   <div class="col-sm-12">
-                      <h1>Kawabanga! I'm <span id="myName">Nícolas</span>, how are you?</h1>
-                      <p>I hope you like my programming journey! Ehr, and maybe hire me?</p>
+                      <h1 id="main-title"><span id="shout">Howdy partner!</span><br> I'm <span class="color-text ">Nícolas</span>, how are <span class="color-text">you?</span></h1>
+                      <p>Glad you are here, let's build some stuff together! </p>
+                      <img id="robot" class="heartbeat" src="img/background.png" alt="">
                   </div>
               </div>
           </div>
       </section>
       <!--WORKS-->
-      <section>
+      <section id="learning">
           <div class="container">
-              <div class="row center-sm">
+              <div class="row center-sm center-xs middle-xs">
                   <div class="col-sm-12">
-                      <h2>What I'm learning</h2>
+                      <h2>What I've been <span class="color-text">learning</span> :</h2>
                       <!--ROW 1-->
-                      <div class="row center-sm">
-                          <div class="col-sm-4">
+                      <div class="row center-sm center-xs">
+                          <div class="col-sm-4 col-xs-4">
                               <i class="fab fa-html5"></i>
                               <h4>HTML 5</h4>
                               <p>I've been learning that!</p>
                           </div>
-                               <div class="col-sm-4">
+                               <div class="col-sm-4 col-xs-4">
                               <i class="fab fa-css3-alt"></i>
                               <h4>CSS 3</h4>
                               <p>I've been learning that!</p>
                           </div>
-                               <div class="col-sm-4">
+                               <div class="col-sm-4 col-xs-4">
                               <i class="fab fa-js-square"></i>
                               <h4>Javascript</h4>
                               <p>I've been learning that!</p>
                           </div>
                       </div>
                       <!--ROW 2-->
-                      <div class="row center-sm">
-                          <div class="col-sm-4">
+                      <div class="row center-sm center-xs">
+                          <div class="col-sm-4 col-xs-4">
                               <i class="fab fa-python"></i>
                               <h4>Python</h4>
                               <p>I've been learning that!</p>
                           </div>
-                               <div class="col-sm-4">
+                               <div class="col-sm-4 col-xs-4">
                               <i class="fab fa-php"></i>
                               <h4>PHP</h4>
                               <p>I've been learning that!</p>
                           </div>
-                               <div class="col-sm-4">
+                               <div class="col-sm-4 col-xs-4">
                               <i class="fab fa-node"></i>                     <h4>Node.js</h4>
                               <p>I've been learning that!</p>
                           </div>
@@ -86,12 +86,24 @@
       <!--INFO SECTION-->
       <section id="info">
           <div class="container">
-              <div class="row center-sm middle-sm">
+              <div class="row center-sm center-xs middle-sm middle-xs">
                   <div class="col-sm-6">
-                      <img src="https://image.freepik.com/free-photo/cute-cat-picture_1122-449.jpg" alt="">
+                      <img class="heartbeat" id="brain" src="img/brain_thinking.png" alt="">
                   </div>
                   <div class="col-sm-6">
-                      <h2>I'm looking forward to expand my experiences!</h2>
+                      <h2>I'm <span class="color-text-2">looking forward</span> to expand my <span class="color-text-3">experiences</span> !</h2>
+                      <ul>
+                          <li><i class="fas fa-code"></i>
+                              If you are looking for someone to code together, call me;</li>
+                          <li><i class="fas fa-hands"></i>
+                              If you know some non-profits that could benefit from my work, call me;</li>
+                          <li><i class="fas fa-hands-helping"></i>If you are looking for a Web Developer to hire, please, call me;</li>
+                          <li>
+                              <i class="fas fa-coffee"></i>
+                          Or if you just want to get around, talk about amazing stuff and drink some coffee, call me!
+                          </li>
+                          
+                      </ul>
                   </div>
               </div>
           </div>
@@ -99,17 +111,42 @@
       <!--CONTACT-->
       <section id="contact">
           <div class="container">
-              <div class="row">
-                  <div class="col-sm-4">
+              <div class="row center-xs">
+                  <div class="col-sm-6 col-md-4">
                       <h4>Contact me!</h4>
                       <ul>
-                          <li><i class="fab fa-github-alt"></i><a href="#">Github</a></li>
-                          <li><i class="fas fa-at"></i>Mail me</li>
+                          <li><a href="https://github.com/niknows" target="_blank"><i class="fab fa-github-alt"></i></a></li>
+                          <li><a href="https://www.facebook.com/profile.php?id=100010944798371" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                          <li><a href="mailto:nailovernail@gmail.com"><i class="fas fa-at"></i></a></li>
                       </ul>
+                      
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                      <h4>About</h4>
+                    <p>What? Nothing here yet.</p>
+                      
+                  </div>
+                    <div class="col-sm-12 col-md-4">
+                      <h4>Tell me something:</h4>
+                    <form>
+                        <input type="text" name="email" placeholder="not working yet...">
+                        <button type="submit" name="button">Send it!</button>
+                    </form>
                       
                   </div>
               </div>
           </div>
       </section>
+      <!--Footer-->
+      <footer id="main-footer">
+          <div class="container">
+              <div class="row center-sm center-xs">
+                  <div class="col-sm-12">
+                      2018 | Niknows
+                  </div>
+              </div>
+          </div>
+      </footer>
+    
   </body>
 </html>
