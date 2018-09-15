@@ -2,8 +2,8 @@
 
 A project using:
 <ul>
-HTML 5
-Css Flexbox
+  <li>HTML 5</li>
+  <li>Css Flexbox</li>
 Css Keyframes
 Css Media queries
 </ul>
